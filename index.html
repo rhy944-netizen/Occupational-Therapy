@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatric Occupational Therapy Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Helping Children Grow, Learn & Achieve</h1>
+        <p>Expert Pediatric & Occupational Therapy Services</p>
+        <div>
+            <button class="btn btn-primary" onclick="document.getElementById('appointment').scrollIntoView();">Book Appointment</button>
+            <button class="btn btn-secondary">Contact Us</button>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 style="text-align:center;">Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1502086223501-7d6ecd7a8da0" alt="Sensory Therapy">
+                <h3>Sensory Integration Therapy</h3>
+                <p>Helping children process and respond to sensory information.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1596464973056-e8838a3a2d54" alt="Occupational Therapy">
+                <h3>Pediatric Occupational Therapy</h3>
+                <p>Enhancing daily living skills and independence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="appointment">
+        <h2 style="text-align:center;">Book a Session</h2>
+        <form id="contactForm">
+            <div class="grid">
+                <input type="text" id="parentName" placeholder="Parent's Name" required>
+                <input type="text" id="childName" placeholder="Child's Name">
+                <input type="number" id="childAge" placeholder="Child's Age">
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="email" id="email" placeholder="Email Address">
+                <select id="therapy" required>
+                    <option value="">Select Required Therapy</option>
+                    <option value="Occupational Therapy">Occupational Therapy</option>
+                    <option value="Sensory Integration">Sensory Integration</option>
+                    <option value="Autism Intervention">Autism Intervention</option>
+                </select>
+            </div>
+            <textarea id="message" rows="4" placeholder="Your Message / Details..."></textarea>
+            <button type="submit" class="btn submit-btn">Submit Enquiry</button>
+        </form>
+    </section>
+
+    <a href="https://wa.me/918603777980" target="_blank" class="whatsapp-float">
+        💬 Chat With Us
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
