@@ -2,13 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+
+
+const app = express();
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
-
-const app = express();
 const path = require('path');
 
 // सर्वर को बताओ कि सारी फाइलें (CSS, JS, Images) यहीं बाहर रखी हैं
