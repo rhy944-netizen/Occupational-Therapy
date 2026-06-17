@@ -1,5 +1,7 @@
 const express = require('express');
 const config = require('./config');
+const nodemailer = require('nodemailer');
+const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
